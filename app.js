@@ -44,7 +44,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));  
 app.use(express.static(path.join(__dirname, 'public')));  
 
-// Session store configuration  
+// Session store configurationss  
 const store = new MongoDBStore({  
     url: dbUrl,  
     secret: 'thisshouldbeabettersecret!',  
